@@ -1,0 +1,22 @@
+.info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  color: $grey;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info a {
+  transition: color 0.3s;
+
+  outline: none;
+}
+
+.info a:hover,
+.info a:focus {
+  color: $grapefruit;
+}

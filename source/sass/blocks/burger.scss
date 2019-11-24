@@ -1,0 +1,40 @@
+.burger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: relative;
+
+  font-size: 0;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    left: 50%;
+    margin-left: -12px;
+
+    background-color: $white;
+  }
+
+  &::before {
+    top: 3px;
+  }
+
+  &::after {
+    bottom: 3px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $laptop-width - 1px) {
+    display: block;
+  }
+}

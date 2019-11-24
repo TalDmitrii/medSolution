@@ -1,0 +1,60 @@
+.health-parameters {
+  background-image: url("../img/sprite/mini-bg-1.svg");
+  background-size: 338px 394px;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  margin-bottom: 120px;
+}
+
+.health-parameters__content-wrapper {
+  display: flex;
+  width: 1500px;
+
+  margin: 0 auto;
+}
+
+.health-parameters__inner-wrapper {
+  width: 30%;
+}
+
+.health-parameters__list {
+  @include indents-zero;
+}
+
+.health-parameters h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: normal;
+  color: $salmon;
+
+  margin: 0;
+}
+
+.health-parameters__item {
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.78;
+  color: $warm-grey;
+
+  margin-bottom: 5px;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    background-color: $salmon;
+    border-radius: 50%;
+  }
+}
+
+.health-parameters__item p {
+  margin: 0;
+}

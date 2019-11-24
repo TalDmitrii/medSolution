@@ -1,0 +1,75 @@
+.app-function {
+  width: 1500px;
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 129px;
+}
+
+.app-function__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include indents-zero;
+}
+
+.app-function__item {
+  width: 22%;
+  display: flex;
+  align-items: center;
+
+  margin-right: 3.6%;
+  margin-bottom: 40px;
+}
+
+.app-function__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.app-function h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: normal;
+  color: $grapefruit;
+
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.app-function__item p {
+  max-width: 210px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
+
+  margin: 0;
+  margin-left: 25px;
+}
+
+.app-function__new-function {
+  position: relative;
+
+  &::before {
+    content: "Скоро";
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $white;
+
+    padding: 0 8px;
+
+    border-radius: 9px;
+    background-image: linear-gradient(to right, $salmon 0%, $grapefruit 100%);
+  }
+}
+
+.app-function__item svg {
+  flex-shrink: 0;
+}

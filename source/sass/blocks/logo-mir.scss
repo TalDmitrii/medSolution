@@ -1,0 +1,30 @@
+.logo-mir {
+  display: flex;
+  align-items: center;
+
+  margin-right: 2px;
+
+  outline: none;
+}
+
+.logo-mir g {
+  transition: fill 0.3s;
+}
+
+.logo-mir--white g {
+  fill: $white;
+}
+
+.logo-mir--white:hover g,
+.logo-mir--white:focus g {
+  fill: $warm-grey;
+}
+
+.logo-mir--grey g {
+  fill: $grey;
+}
+
+.logo-mir--grey:hover g,
+.logo-mir--grey:focus g {
+  fill: $grapefruit;
+}
