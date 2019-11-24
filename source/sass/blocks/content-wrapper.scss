@@ -1,6 +1,7 @@
 .content-wrapper {
-  background-image: url("../img/sprite/mini-bg-2.svg");
-  background-size: 444px 910px;
+  background-image: url("../img/sprite/mini-bg-2.svg"),
+                    url("../img/sprite/mini-bg-1.svg");
+  background-size: 444px 910px, 338px 394px;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right 100px, left 315px;
 }

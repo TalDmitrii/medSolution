@@ -3,7 +3,7 @@
   position: relative;
 
   margin: 0 auto;
-  margin-bottom: 129px;
+  margin-bottom: 136px;
 }
 
 .app-function__list {
@@ -43,6 +43,7 @@
   font-weight: 400;
   line-height: normal;
   color: $black;
+  word-break: break-word;
 
   margin: 0;
   margin-left: 25px;
@@ -50,6 +51,7 @@
 
 .app-function__new-function {
   position: relative;
+  word-break: keep-all;
 
   &::before {
     content: "Скоро";
