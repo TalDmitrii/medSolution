@@ -1,10 +1,5 @@
 .health-parameters {
-  background-image: url("../img/sprite/mini-bg-1.svg");
-  background-size: 338px 394px;
-  background-repeat: no-repeat;
-  background-position: top left;
-
-  margin-bottom: 120px;
+  margin-bottom: 98px;
 }
 
 .health-parameters__content-wrapper {
@@ -16,6 +11,8 @@
 
 .health-parameters__inner-wrapper {
   width: 30%;
+
+  margin-right: 145px;
 }
 
 .health-parameters__list {
@@ -27,8 +24,11 @@
   font-weight: 400;
   line-height: normal;
   color: $salmon;
+  word-break: break-word;
 
   margin: 0;
+  margin-top: 90px;
+  margin-bottom: 39px;
 }
 
 .health-parameters__item {
@@ -40,14 +40,14 @@
   color: $warm-grey;
 
   margin-bottom: 5px;
-  padding-left: 30px;
+  padding-left: 27px;
 
   &::before {
     content: "";
     width: 8px;
     height: 8px;
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 0;
 
     background-color: $salmon;
