@@ -120,6 +120,7 @@ gulp.task('build', (done) => {
     'copy',
     'style',
     'html',
+    'webp',
     'js',
     'jsPlugins',
     done

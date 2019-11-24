@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+
+  box-shadow: 0 3px 9px 0 rgba(#003f49, 0.1);
+}
+
+.page-header__content-wrapper {
+  width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 17px 0;
+}
+
+.page-header__inner-wrapper {
+  display: flex;
+}

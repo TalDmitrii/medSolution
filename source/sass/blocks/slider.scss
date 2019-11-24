@@ -1,0 +1,23 @@
+.slider {
+  width: 809px;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider.swiper-container {
+  height: 727px;
+}
+
+.slider .swiper-slide {
+  width: 335px !important;
+  height: 727px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+}

@@ -1,0 +1,32 @@
+.download {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.download__link {
+  height: 46px;
+
+  margin-left: 25px;
+
+  text-decoration: none;
+
+  outline: none;
+}
+
+.download__link rect {
+  stroke: $white;
+
+  transition: stroke 0.3s;
+}
+
+.download__link:hover rect,
+.download__link:focus rect {
+  fill: $warm-grey;
+  stroke: $warm-grey;
+}
+
+.page-header .download {
+  margin-right: 58px;
+}
