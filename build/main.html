@@ -7,7 +7,7 @@
     <meta name="Description" content="Тестовое задание">
     <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
-    <title>Главная</title>
+    <title>Главная страница</title>
   </head>
 
   <body>
@@ -37,7 +37,7 @@
         <div class="page-header__inner-wrapper">
           <div class="download download--mobile-hidden">
             <!-- Кнопка Загрузить приложение с Google Play -->
-            <a class="download__link" href="#" aria-label="Загрузить приложение с Google Play">
+            <a class="download__link download__link--google" href="#" aria-label="Загрузить приложение с Google Play">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="46" viewBox="0 0 162 46">
                 <defs>
                     <linearGradient x1="58.744%" x2="90.017%" y1="9.59%" y2="60.851%">
@@ -98,8 +98,8 @@
             </a>
 
             <!-- Кнопка Загрузить приложение с App Store -->
-            <a class="download__link" href="#" aria-label="Загрузить приложение с App Store">
-              <svg xmlns="http://www.w3.org/2000/svg" width="132" height="46" viewBox="0 0 132 46">
+            <a class="download__link download__link--app-store" href="#" aria-label="Загрузить приложение с App Store">
+              <svg xmlns="http://www.w3.org/2000/svg" width="132" height="46" viewBox="0 0 132 46" preserveAspectRatio="none">
                 <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
                     <rect width="129.976" height="44" fill-rule="nonzero" fill="none" stroke="none" rx="22"></rect>
                     <g fill="#FFF" fill-rule="nonzero">
@@ -138,34 +138,34 @@
           <p class="features-wrapper__description">
             Универсальная электронная медицинская карта и сервис<br> для дистанционного сопровождения пациентов, которая решает следующие проблемы:
           </p>
-
-          <ul class="features-list">
-            <li class="features-list__item">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite.svg#features-1"></use>
-              </svg>
-              <p>Все необходимое в одном месте</p>
-            </li>
-            <li class="features-list__item">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite.svg#features-2"></use>
-              </svg>
-              <p>Разработано врачами</p>
-            </li>
-            <li class="features-list__item">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite.svg#features-3"></use>
-              </svg>
-              <p>Безопасность данных</p>
-            </li>
-            <li class="features-list__item">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite.svg#features-4"></use>
-              </svg>
-              <p>Бесплатное приложение</p>
-            </li>
-          </ul>
         </div>
+
+        <ul class="features-list">
+          <li class="features-list__item">
+            <svg width="90" height="90">
+              <use xlink:href="img/sprite.svg#features-1"></use>
+            </svg>
+            <p>Все необходимое в одном месте</p>
+          </li>
+          <li class="features-list__item">
+            <svg width="90" height="90">
+              <use xlink:href="img/sprite.svg#features-2"></use>
+            </svg>
+            <p>Разработано врачами</p>
+          </li>
+          <li class="features-list__item">
+            <svg width="90" height="90">
+              <use xlink:href="img/sprite.svg#features-3"></use>
+            </svg>
+            <p>Безопасность данных</p>
+          </li>
+          <li class="features-list__item">
+            <svg width="90" height="90">
+              <use xlink:href="img/sprite.svg#features-4"></use>
+            </svg>
+            <p>Бесплатное приложение</p>
+          </li>
+        </ul>
 
         <section class="device-toggle">
           <h2 class="visually-hidden">Тип устройства</h2>
@@ -260,29 +260,33 @@
 
             <div class="health-parameters__inner-wrapper">
               <h2>Контролируйте показатели своего здоровья</h2>
-              <ul class="health-parameters__list">
-                <li class="health-parameters__item">
-                  <p>Артериальное давление</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Частота сердечных сокращений</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Сахар в крови</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Вес</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Рост</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Температура</p>
-                </li>
-                <li class="health-parameters__item">
-                  <p>Произвольные показатели</p>
-                </li>
-              </ul>
+              <div class="health-parameters__list-wrapper">
+                <ul class="health-parameters__list">
+                  <li class="health-parameters__item">
+                    <p>Артериальное давление</p>
+                  </li>
+                  <li class="health-parameters__item">
+                    <p>Частота сердечных сокращений</p>
+                  </li>
+                  <li class="health-parameters__item">
+                    <p>Сахар в крови</p>
+                  </li>
+                </ul>
+                <ul class="health-parameters__list">
+                  <li class="health-parameters__item">
+                    <p>Вес</p>
+                  </li>
+                  <li class="health-parameters__item">
+                    <p>Рост</p>
+                  </li>
+                  <li class="health-parameters__item">
+                    <p>Температура</p>
+                  </li>
+                  <li class="health-parameters__item">
+                    <p>Произвольные показатели</p>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="slider">

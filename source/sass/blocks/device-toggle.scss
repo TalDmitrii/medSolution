@@ -1,8 +1,15 @@
 .device-toggle {
   display: flex;
-  position: absolute;
-  top: 200px;
-  right: 95px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 200px;
+    right: 95px;
+  }
+
+  @media (max-width: $desktop-width - 1px) {
+    margin-right: 10px;
+  }
 }
 
 .device-toggle__item {
@@ -13,6 +20,10 @@
 
 .device-toggle__item:first-of-type {
   margin-right: -40px;
+
+  // @media (max-width: $laptop-width - 1px) {
+  //   margin-right: -20px;
+  // }
 }
 
 .device-toggle__item img {
@@ -24,6 +35,18 @@
   transition-timing-function: ease-in;
 
   margin-bottom: 110px;
+
+  @media (max-width: $laptop-large-width - 1px) {
+    width: 200px;
+    height: 400px;
+
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 147px;
+    height: 294px;
+  }
 }
 
 .device-toggle__item label {
@@ -41,6 +64,10 @@
   cursor: pointer;
 
   transition: color 0.2s;
+
+  @media (max-width: $laptop-width - 1px) {
+    font-size: 16px;
+  }
 }
 
 .device-toggle__item label:hover,
@@ -64,4 +91,9 @@
 
   border: 2px solid $warm-grey;
   border-radius: 50%;
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 7px;
+    height: 7px;
+  }
 }

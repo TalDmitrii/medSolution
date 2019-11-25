@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.download--mobile-hidden {
+  @media (max-width: $tablet-width - 1px) {
+    display: none;
+  }
+}
+
 .download__link {
   height: 46px;
 
@@ -13,6 +19,12 @@
   text-decoration: none;
 
   outline: none;
+
+  @media (max-width: $laptop-width - 1px) {
+    height: 25px;
+
+    margin-left: 5px;
+  }
 }
 
 .download__link rect {
@@ -29,4 +41,15 @@
 
 .page-header .download {
   margin-right: 58px;
+
+  @media (max-width: $laptop-width - 1px) {
+    margin-right: 22px;
+  }
+}
+
+.download__link svg {
+  @media (max-width: $laptop-width - 1px) {
+    width: 87px;
+    height: 25px;
+  }
 }

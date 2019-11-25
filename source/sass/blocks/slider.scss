@@ -2,6 +2,7 @@
   position: relative;
   width: 809px;
   overflow: hidden;
+  flex-shrink: 0;
 
   padding-top: 35px;
   padding-bottom: 50px;
@@ -23,6 +24,14 @@
 
     border-radius: 30px;
   }
+
+  @media (max-width: $laptop-large-width - 1px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 568px;
+  }
 }
 
 .slider .swiper-container {
@@ -30,6 +39,10 @@
   height: 645px;
 
   margin-left: -240px;
+
+  @media (max-width: $laptop-width - 1px) {
+    // margin-left: -340px;
+  }
 }
 
 .slider .swiper-slide {

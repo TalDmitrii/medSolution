@@ -4,6 +4,14 @@
   flex-direction: column;
 
   padding-top: 56px;
+
+  @media (max-width: $desktop-width - 1px) {
+    width: 100%;
+  }
+
+  @media (max-width: $laptop-width - 1px) {
+    padding-top: 30px;
+  }
 }
 
 .features-wrapper h1 {
@@ -13,6 +21,14 @@
 
   margin: 0;
   margin-bottom: 25px;
+
+  @media (max-width: $laptop-width - 1px) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.38;
+
+    margin-bottom: 11px;
+  }
 }
 
 .features-wrapper__description {
@@ -22,4 +38,13 @@
 
   margin: 0;
   margin-bottom: 54px;
+
+  @media (max-width: $laptop-width - 1px) {
+    max-width: 85%;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    margin-bottom: 29px;
+  }
 }

@@ -1,9 +1,15 @@
 .app-function {
-  width: 1500px;
+  max-width: 1500px;
   position: relative;
 
   margin: 0 auto;
   margin-bottom: 136px;
+
+  @media (max-width: $desktop-width - 1px) {
+    max-width: 100%;
+
+    margin: 0 $laptop-margin;
+  }
 }
 
 .app-function__list {
@@ -20,10 +26,41 @@
 
   margin-right: 3.6%;
   margin-bottom: 40px;
+
+  @media (max-width: $desktop-width - 1px) {
+    width: 32%;
+
+    margin-right: 2%;
+  }
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 46%;
+
+    margin-right: 6.6%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 100%;
+  }
 }
 
-.app-function__item:nth-child(4n) {
-  margin-right: 0;
+@media (min-width: $desktop-width) {
+  .app-function__item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $laptop-width) and (max-width: $desktop-width - 1px) {
+  .app-function__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $laptop-width - 1px) {
+  .app-function__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .app-function h2 {
@@ -34,6 +71,12 @@
 
   margin: 0;
   margin-bottom: 42px;
+
+  @media (max-width: $laptop-width - 1px) {
+    font-size: 28px;
+
+    margin-bottom: 30px;
+  }
 }
 
 .app-function__item p {
@@ -47,7 +90,19 @@
 
   margin: 0;
   margin-left: 25px;
+
+  @media (max-width: $laptop-width - 1px) {
+    font-size: 16px;
+
+    margin-left: 20px;
+  }
 }
+
+// @media (min-width: $tablet-width) and (max-width: $laptop-width - 1px) {
+//   .app-function__item:nth-child(2n) p {
+//     margin-right: 0;
+//   }
+// }
 
 .app-function__new-function {
   position: relative;
@@ -74,4 +129,9 @@
 
 .app-function__item svg {
   flex-shrink: 0;
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 45px;
+    height: 45px;
+  }
 }

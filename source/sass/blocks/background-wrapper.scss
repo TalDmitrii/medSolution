@@ -9,4 +9,10 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: $laptop-width - 1px) {
+    height: 582px;
+
+    background-image: url("../img/start-bg-tablet.png");
+  }
 }
