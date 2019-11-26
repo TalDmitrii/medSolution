@@ -4,6 +4,14 @@
   line-height: normal;
   text-align: right;
   color: $grey;
+
+  @media (max-width: $laptop-width - 1px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    text-align: left;
+  }
 }
 
 .info p {
