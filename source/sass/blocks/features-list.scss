@@ -15,6 +15,12 @@
   @media (max-width: $laptop-width - 1px) {
     width: 44%;
   }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
 }
 
 .features-list__item {
@@ -65,5 +71,9 @@
     height: 45px;
 
     margin-right: 30px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    margin-right: 35px;
   }
 }

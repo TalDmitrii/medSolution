@@ -2,6 +2,10 @@
   position: relative;
 
   box-shadow: 0 3px 9px 0 rgba(#003f49, 0.1);
+
+  @media (max-width: $tablet-width - 1px) {
+    box-shadow: none;
+  }
 }
 
 .page-header__content-wrapper {
@@ -24,6 +28,11 @@
     padding-bottom: 5px;
 
     justify-content: stretch;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    margin: 0 $mobile-margin;
+    padding: 23px 0;
   }
 }
 

@@ -4,4 +4,11 @@
   background-size: 444px 910px, 338px 394px;
   background-repeat: no-repeat;
   background-position: right 100px, left 315px;
+
+  @media (max-width: $laptop-width - 1px) {
+    background-image: url("../img/sprite/mini-bg-2.svg");
+    background-size: 300px 600px;
+    background-repeat: no-repeat;
+    background-position: right 100px;
+  }
 }

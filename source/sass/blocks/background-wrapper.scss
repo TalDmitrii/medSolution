@@ -15,4 +15,8 @@
 
     background-image: url("../img/start-bg-tablet.png");
   }
+
+  @media (max-width: $tablet-width - 1px) {
+    height: 760px;
+  }
 }

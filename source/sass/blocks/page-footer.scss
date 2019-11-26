@@ -12,4 +12,12 @@
 
     margin: 0 $laptop-margin;
   }
+
+  @media (max-width: $laptop-width - 1px) {
+    padding: 10px 0;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    margin: 0 $mobile-margin;
+  }
 }

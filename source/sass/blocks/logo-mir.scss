@@ -9,12 +9,21 @@
   @media (max-width: $laptop-width - 1px) {
     margin-right: 20px;
   }
+
+  @media (max-width: $tablet-width - 1px) {
+    margin-right: 3px;
+  }
 }
 
 .logo-mir svg {
   @media (max-width: $laptop-width - 1px) {
     width: 120px;
     height: 38px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 126px;
+    height: 40px;
   }
 }
 
@@ -38,4 +47,10 @@
 .logo-mir--grey:hover g,
 .logo-mir--grey:focus g {
   fill: $grapefruit;
+}
+
+.page-footer .logo-mir {
+  @media (max-width: $tablet-width - 1px) {
+    display: none;
+  }
 }

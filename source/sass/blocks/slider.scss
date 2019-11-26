@@ -4,26 +4,7 @@
   overflow: hidden;
   flex-shrink: 0;
 
-  padding-top: 35px;
-  padding-bottom: 50px;
-
-  &::before {
-    content: "";
-    width: 342px;
-    height: 713px;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border-left: 17px solid $grey;
-    border-right: 17px solid $grey;
-    border-top: 44px solid $grey;
-    border-bottom: 44px solid $grey;
-
-    border-radius: 30px;
-  }
+  padding: 35px 0;
 
   @media (max-width: $laptop-large-width - 1px) {
     margin: 0 auto;
@@ -31,6 +12,14 @@
 
   @media (max-width: $laptop-width - 1px) {
     width: 568px;
+
+    padding: 25px 0;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 288px;
+
+    padding: 12px 0;
   }
 }
 
@@ -41,7 +30,17 @@
   margin-left: -240px;
 
   @media (max-width: $laptop-width - 1px) {
-    // margin-left: -340px;
+    width: 900px;
+    height: 452px;
+
+    margin-left: -166px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 460px;
+    height: 230px;
+
+    margin-left: -86px;
   }
 }
 
@@ -53,6 +52,16 @@
   background-repeat: no-repeat;
 
   border-radius: 30px;
+
+  @media (max-width: $laptop-width - 1px) {
+    height: 452px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    height: 230px;
+
+    border-radius: 15px;
+  }
 }
 
 .slider .swiper-slide-active {
@@ -75,6 +84,17 @@
   border-radius: 50%;
   box-shadow: 0 3px 9px 0 rgba(0, 63, 73, 0.1), 0 10px 25px 0 rgba(186, 16, 12, 0.3);
   outline: none;
+
+  @media (max-width: $laptop-width - 1px) {
+    width: 47px;
+    height: 47px;
+
+    margin-top: -30px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    display: none;
+  }
 }
 
 .slider .swiper-button-prev {
@@ -82,6 +102,12 @@
 
   background-image: url("../img/arrow-prev.svg");
   background-size: 17px 39px;
+
+  @media (max-width: $laptop-width - 1px) {
+    left: 263px;
+
+    background-size: 12px 26px;
+  }
 }
 
 .slider .swiper-button-next {
@@ -89,6 +115,12 @@
 
   background-image: url("../img/arrow-next.svg");
   background-size: 17px 39px;
+
+  @media (max-width: $laptop-width - 1px) {
+    right: 255px;
+
+    background-size: 12px 26px;
+  }
 }
 
 .slider .swiper-button-prev:hover,

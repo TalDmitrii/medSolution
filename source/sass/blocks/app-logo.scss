@@ -20,6 +20,11 @@
     line-height: 14px;
     font-weight: 500;
   }
+
+  @media (max-width: $tablet-width - 1px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .app-logo:hover,
@@ -39,6 +44,10 @@
     margin-left: 8px;
     margin-bottom: 3px;
   }
+
+  @media (max-width: $tablet-width - 1px) {
+    margin-left: 10px;
+  }
 }
 
 .app-logo rect {
@@ -56,5 +65,10 @@
   @media (max-width: $laptop-width - 1px) {
     width: 37px;
     height: 37px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    width: 42px;
+    height: 42px;
   }
 }
