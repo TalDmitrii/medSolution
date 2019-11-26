@@ -20,3 +20,11 @@
     height: 760px;
   }
 }
+
+.webp .background-wrapper {
+  background-image: url("../img/webp/start-bg-desktop.webp");
+
+  @media (max-width: $laptop-width - 1px) {
+    background-image: url("../img/webp/start-bg-tablet.webp");
+  }
+}

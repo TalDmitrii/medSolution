@@ -1146,6 +1146,12 @@ button.swiper-pagination-bullet {
     .background-wrapper {
       height: 760px; } }
 
+.webp .background-wrapper {
+  background-image: url("../img/webp/start-bg-desktop.webp"); }
+  @media (max-width: 1023px) {
+    .webp .background-wrapper {
+      background-image: url("../img/webp/start-bg-tablet.webp"); } }
+
 .burger {
   display: none;
   width: 32px;
@@ -2111,6 +2117,90 @@ button.swiper-pagination-bullet {
 .slider .swiper-button-next:active {
   -webkit-box-shadow: none;
           box-shadow: none; }
+
+.slider__item-1 {
+  background-image: url("../img/android-1.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-1 {
+      background-image: url("../img/android-1@2x.jpg"); } }
+
+.webp .slider__item-1 {
+  background-image: url("../img/webp/android-1.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-1 {
+      background-image: url("../img/webp/android-1@2x.webp"); } }
+
+.slider__item-2 {
+  background-image: url("../img/android-2.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-2 {
+      background-image: url("../img/android-2@2x.jpg"); } }
+
+.webp .slider__item-2 {
+  background-image: url("../img/webp/android-2.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-2 {
+      background-image: url("../img/webp/android-2@2x.webp"); } }
+
+.slider__item-3 {
+  background-image: url("../img/android-3.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-3 {
+      background-image: url("../img/android-3@2x.jpg"); } }
+
+.webp .slider__item-3 {
+  background-image: url("../img/webp/android-3.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-3 {
+      background-image: url("../img/webp/android-3@2x.webp"); } }
+
+.slider__item-4 {
+  background-image: url("../img/android-4.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-4 {
+      background-image: url("../img/android-4@2x.jpg"); } }
+
+.webp .slider__item-4 {
+  background-image: url("../img/webp/android-4.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-4 {
+      background-image: url("../img/webp/android-4@2x.webp"); } }
+
+.slider__item-5 {
+  background-image: url("../img/android-5.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-5 {
+      background-image: url("../img/android-5@2x.jpg"); } }
+
+.webp .slider__item-5 {
+  background-image: url("../img/webp/android-5.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-5 {
+      background-image: url("../img/webp/android-5@2x.webp"); } }
+
+.slider__item-6 {
+  background-image: url("../img/android-6.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-6 {
+      background-image: url("../img/android-6@2x.jpg"); } }
+
+.webp .slider__item-6 {
+  background-image: url("../img/webp/android-6.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-6 {
+      background-image: url("../img/webp/android-6@2x.webp"); } }
+
+.slider__item-7 {
+  background-image: url("../img/android-7.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__item-7 {
+      background-image: url("../img/android-7@2x.jpg"); } }
+
+.webp .slider__item-7 {
+  background-image: url("../img/webp/android-7.webp"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .webp .slider__item-7 {
+      background-image: url("../img/webp/android-7@2x.webp"); } }
 
 .mobile-imitation__top {
   width: 342px;
